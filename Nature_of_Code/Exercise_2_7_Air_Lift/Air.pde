@@ -1,0 +1,20 @@
+class Air{
+  float x,y,w,h;
+  float c;
+  
+  Air(float x_, float y_, float w_, float h_, float c_){
+    x = x_;
+    y = y_;
+    w = w_;
+    h = h_;
+    c = c_;
+  }
+  
+  void display(){
+    pushStyle();
+    noStroke();
+    fill(175);
+    rect(x,h,w,h);
+    popStyle();
+  }
+}
